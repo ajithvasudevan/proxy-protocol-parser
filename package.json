@@ -11,10 +11,10 @@
     "test": "nodeunit"
   },
   "dependencies": {
-    "hexy": "^0.2.5",
-    "ip-address": "^4.0.0"
+    "hexy": "^0.3.0",
+    "ip-address": "^5.8.9"
   },
   "devDependencies": {
-    "nodeunit": "^0.9.1"
+    "nodeunit": "^0.11.3"
   }
 }
