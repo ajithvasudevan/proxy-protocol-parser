@@ -1,4 +1,7 @@
-# proxy-protocol-v2
+# proxy-protocol-parser
+
+[![npm version](https://badge.fury.io/js/%40balena%2Fproxy-protocol-parser.svg)](http://badge.fury.io/js/%40balena%2Fproxy-protocol-parser)
+[![dependencies](https://david-dm.org/balena-io-modules/proxy-protocol-parser.png)](https://david-dm.org/balena-io-modules/proxy-protocol-parser.png)
 
 ## Overview
 
@@ -10,20 +13,20 @@ Supports IPv4 and IPv6, UDP and TCP, but not UNIX sockets.
 
 ## install
 
-    npm install proxy-protocol-v2
+    npm install @balena/proxy-protocol-parser
 
 ## encode
 
 Separate v1 and v2 encoders are provided.
 
 ````
-var buf = require('proxy-protocol-v2').v2_encode(socket);
+var buf = require('@balena/proxy-protocol-parser').v2_encode(socket);
 ````
 
 or
 
 ````
-var buf = require('proxy-protocol-v2').v2_encode({
+var buf = require('proxy-protocol-parser').v2_encode({
   remoteFamily: 'IPv4',
   remoteAddress: '12.34.56.78',
   remotePort: 1234,
@@ -42,7 +45,7 @@ The `v1_encode` function has the same API but is constrained by the limits of th
 A generic decoder is provided that detects the format of any header. If no valid v1 or v2 signature is detected, `null` is returned.
 
 ````
-var details = require('proxy-protocol-v2').decode(buf);
+var details = require('@balena/proxy-protocol-parser').decode(buf);
 if(details === null) {
     console.log('No proxy protocol header detected');
 }
@@ -58,8 +61,8 @@ var remoteFamily = details.remoteFamily,
 Separate decoders are provided for each version if the expected version is known.
 
 ````
-var v1_details = require('proxy-protocol-v2').v1_decode(buf);
-var v2_details = require('proxy-protocol-v2').v2_decode(buf);
+var v1_details = require('@balena/proxy-protocol-parser').v1_decode(buf);
+var v2_details = require('@balena/proxy-protocol-parser').v2_decode(buf);
 ````
 
 The format-specific functions will assume the presence of a header and may throw an Error or return invalid details if a header is not present.

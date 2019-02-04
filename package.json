@@ -1,17 +1,18 @@
 {
-  "name": "proxy-protocol-v2",
-  "description": "Encoder and decoder for proxy protocol",
-  "version": "0.0.2",
+  "name": "@balena/proxy-protocol-parser",
+  "description": "Encoder and Decoder for proxy protocol v1 text and v2 binary formats",
+  "license": "Apache-2.0",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:balena-io-modules/proxy-protocol-parser.git"
+  },
+  "scripts": {
+    "test": "nodeunit"
+  },
   "dependencies": {
     "hexy": "^0.2.5",
     "ip-address": "^4.0.0"
-  },
-  "engines": {
-    "iojs": "1.8.x"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:ably/proxy-protocol-v2.git"
   },
   "devDependencies": {
     "nodeunit": "^0.9.1"
