@@ -1,0 +1,45 @@
+- version: 1.0.0
+  date: "2019-03-13T14:17:04Z"
+  commits:
+  - hash: b55c91bd50a90f699ef73d57302c87a3c5b4c8ea
+    author: Will Boyce
+    footers:
+      change-type: minor
+      signed-off-by: Will Boyce <will@balena.io>
+    subject: 'v1: Do not require space between localPort and CRLF'
+    body: ""
+  - hash: 236634734898fb454fee8cb3587d7a0a11076600
+    author: Will Boyce
+    footers:
+      change-type: minor
+      signed-off-by: Will Boyce <will@balena.io>
+    subject: 'v2: Version should be checked against only highest four bits'
+    body: ""
+  - hash: f7951ac151c43a777a89e82bbe5657398704cce6
+    author: Will Boyce
+    footers:
+      change-type: major
+      signed-off-by: Will Boyce <will@balena.io>
+    subject: prepare for automatic versioning & publishing under @balena namespace
+    body: ""
+  - hash: 1e57fe7d0ffb170d3408fc109ba7bd2934f8727b
+    author: Will Boyce
+    footers:
+      change-type: minor
+      signed-off-by: Will Boyce <will@balena.io>
+    subject: update dependencies
+    body: ""
+  - hash: 9a598e8cf6bcbf4532adca54c83d7615993f26bc
+    author: Will Boyce
+    footers:
+      change-type: minor
+      signed-off-by: Will Boyce <will@balena.io>
+    subject: enforce prettier coding standards
+    body: ""
+  - hash: a58fa4615a9b8950fada3349c34f0698f2023026
+    author: Will Boyce
+    footers:
+      change-type: patch
+      signed-off-by: Will Boyce <will@balena.io>
+    subject: add typescript typings
+    body: ""
