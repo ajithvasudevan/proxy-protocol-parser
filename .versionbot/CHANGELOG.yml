@@ -1,4 +1,16 @@
 - commits:
+    - subject: gracefully handle v2 healthcheck headers
+      hash: 380cdf05af5a6edde1a14ef9d1759730bbad741d
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Will Boyce <will@balena.io>
+        signed-off-by: Will Boyce <will@balena.io>
+      author: Will Boyce
+  version: 1.0.2
+  date: 2020-09-01T12:45:06.264Z
+- commits:
     - subject: 'npm: Update dependencies and remove `package-lock.json`'
       hash: c96004dfc52bb52c11ec99f02f52909b5fdc632a
       body: ''
